@@ -1,0 +1,418 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.nav {
+  font-family: Arial;
+  background-color: #7e6651;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.left li,
+.right li {
+  display: inline-block;
+  margin: 0px 10px 0px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 25px;
+}
+
+.left {
+  padding: 10px 40px;
+}
+
+.logo h4 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial;
+  margin: 0px 10px 0px;
+}
+
+.logo h4:hover {
+  color: #fff298;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.nav a {
+  color: #f6e2b3;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.nav li a:hover {
+  background-color: #ff8daa;
+  color: white;
+}
+
+.nav a.active {
+  background-color: #fdaeae;
+  color: white;
+}
+
+.side {
+  display: none;
+}
+
+.main h1 {
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 40px;
+  font-family: Arial Black;
+  margin: 0px 30px 0px;
+  padding-top: 75px;
+}
+
+.subjects {
+  display: flex;
+  flex: 0 0 33.333333%;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.subjects div {
+  background-color: #f3f3f3;
+  width: 350px;
+  height: 350px;
+  margin: 30px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.subjects button {
+  width: 200px;
+  height: 80px;
+  word-wrap: break-word;
+  font-size: 22px;
+  margin: 10px;
+  font-family: Comic Sans MS;
+  border-style: none;
+  border-radius: 10px;
+}
+
+.subjects button:hover {
+  cursor: pointer;
+}
+
+.subjects img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 40px;
+}
+
+.chem button {
+  background-color: #ffb8b8;
+}
+
+.math button {
+  background-color: #fff565;
+}
+
+.p6 button {
+  background-color: #c88efe;
+}
+
+.stat button,
+.research button {
+  background-color: #8efeee;
+}
+
+.bio button {
+  background-color: #c0fe8e;
+}
+
+.eng button {
+  background-color: #fece8e;
+}
+
+.fil button {
+  background-color: #8e96fe;
+  color: white;
+}
+
+.ss button {
+  background-color: #e4c06d;
+  color: white;
+}
+
+.cs button {
+  background-color: #9a9893;
+  color: white;
+}
+
+.pe button {
+  background-color: #8adab3;
+  color: white;
+}
+
+.music button {
+  background-color: #ff61c5;
+  color: white;
+}
+
+.health button {
+  background-color: #ff6f61;
+  color: white;
+}
+
+.es button {
+  background-color: #82fd6c;
+}
+
+.is button {
+  background-color: #90fddd;
+}
+
+.val-ed button {
+  background-color: #feb0c8;
+}
+
+.ad-tech button,
+.elective button {
+  background-color: #d7b0fe;
+}
+
+.main.g7 {
+  background-color: #ccfb60;
+}
+
+.main.g8 {
+  background-color: #fbf160;
+}
+
+.main.g9 {
+  background-color: #ffbeb3;
+}
+
+.main.g10 {
+  background-color: #7adaff;
+}
+
+.main.syp11 {
+  background-color: #c0c0c0;
+}
+
+.main.syp12 {
+  background-color: #e1e1e1;
+}
+
+footer {
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  background-color: #7e6651;
+  color: #f6e2b3;
+}
+
+@media only screen and (max-width: 1365px) {
+  .main {
+    position: relative;
+    width: 100%;
+    z-index: -2;
+    background-repeat: repeat;
+  }
+
+  body {
+    position: absolute;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .main h1 {
+    font-size: 80px;
+    letter-spacing: 30px;
+    margin: 0px 0px 0px 30px;
+  }
+
+  .subjects div {
+    width: 300px;
+    height: 300px;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .subjects button {
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+  }
+
+  .logo h4 {
+    font-size: 27px;
+    margin: 0px 10px 0px;
+  }
+
+  .left ul {
+    display: none;
+  }
+
+  .right {
+    padding: 10px 0px;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+
+  .side {
+    display: inline-block;
+    margin: 0px 0px 0px auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    position: fixed;
+  }
+
+  .drop-content {
+    display: none;
+    z-index: 1;
+    position: relative;
+    background-color: #7e6651;
+    color: #f6e2b3;
+    font-family: Arial;
+  }
+
+  .drop-content a {
+    text-decoration: none;
+    color: #f6e2b3;
+    padding: 14px 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .drop-button {
+    margin: 0px;
+    color: #f6e2b3;
+    background-color: #7e6651;
+    border: none;
+    padding: 14px 40px;
+    font-size: 20px;
+  }
+
+  .side:hover .drop-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drop-button:hover,
+  .drop-content a:hover {
+    background-color: #ff8daa;
+    cursor: pointer;
+    color: white;
+  }
+
+  .side a.active {
+    background-color: #fdaeae;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 745px) {
+  .right a {
+    padding: 15px 10px;
+  }
+
+  .logo h4 {
+    margin: 0px;
+  }
+
+  .main h1 {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 38px;
+    padding: 60px 0px 0px 40px;
+    margin: 0px;
+  }
+
+  html,
+  body {
+    position: absolute;
+    height: 100%;
+  }
+
+  .subjects div {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+  }
+
+  .subjects button {
+    width: 150px;
+    height: 60px;
+    word-wrap: break-word;
+    font-size: 18px;
+    margin: 8px;
+    border-radius: 10px;
+  }
+
+  .subjects img {
+    padding-top: 20px;
+  }
+
+  .main.syp11 h1,
+  .main.syp12 h1 {
+    padding-top: 65px;
+    font-size: 80px;
+  }
+
+  .main.syp11 .subjects div,
+  .main.syp12 .subjects div {
+    width: 350px;
+    height: 350px;
+    margin: 32px;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .main.syp11 .subjects button,
+  .main.syp12 .subjects button {
+    width: 200px;
+    height: 80px;
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  .main.syp11 .subjects img,
+  .main.syp12 .subjects img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 40px;
+  }
+}

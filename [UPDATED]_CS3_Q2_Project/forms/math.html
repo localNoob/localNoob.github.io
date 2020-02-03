@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name= "viewport" content= "width=device-width, initial-scale=1.0"/>
+		<title>CONSULT.CO - Consultation Form</title>
+		<link rel= "icon" href= "../photos/favicon.png">
+		<link rel="stylesheet" href="../styles/forms.css" type="text/css" />
+</head>
+<body>
+    <div class="title">
+        CONSULT.CO Consultation Form
+    </div>
+    <div class="subject">
+        Mathematics
+    </div>
+    <div class="mainform">
+        <form action="/action_page.php">
+          <label for="name">Complete Name (LAST, First M.I.)</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name" required>
+
+          <label for="sec">Section</label>
+          <input type="text" id="sec" name="sec" placeholder="Your section" required>
+      
+          <label for="temail">Teacher's Email</label>
+          <input type="email" id="temail" name="temail" placeholder="Your preferred teacher's PSHS email" required>
+
+          <label for="Time">Consultation Period</label>
+          <select id="Time" name="Time">
+            <option value="7:30-8:30">7:30-8:30AM</option>
+            <option value="8:30-9:20">8:30-9:20AM</option>
+            <option value="9:40-10:30">9:40-10:30AM</option>
+            <option value="10:30-11:20">10:30-11:20AM</option>
+            <option value="11:20-12:10">11:30-12:10PM</option>
+            <option value="12:10-1:00">12:10-1:00PM</option>
+            <option value="1:00-1:50">1:00-1:50PM</option>
+            <option value="2:10-3:00">2:10-3:00PM</option>
+            <option value="3:00-3:50">3:00-3:50PM</option>
+            <option value="4:00">3:50 onwards</option>
+          </select>
+          <br>
+          <textarea placeholder="Reason for consultation" required></textarea>
+          <br>
+		  <div class= "resume">
+			<label for="date">Date of Consultation </label>
+			<input type="date" id="date" name="date" placeholder="Your preferred teacher's PSHS email" required>
+		  </div>
+		  <div class= "suspension">
+			<input type= "reset" value= "Clear All">
+			<input type="submit" value="Submit">
+		  </div>
+          <br>
+          <button onclick="goBack()"class="button" style="vertical-align:middle"><span>Back </span></button>
+        </form>
+      </div>
+	  <br>
+</body>
+<script>
+function goBack(){
+window.history.back();
+}
+</script>
+</html>
