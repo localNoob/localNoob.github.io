@@ -18,6 +18,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px;
+  height: 7.2vh;
 }
 
 .nav li {
@@ -40,7 +42,7 @@ body {
 }
 
 .left {
-  padding: 10px 40px;
+  padding: 10px 0px;
 }
 
 .logo h4 {
@@ -48,6 +50,7 @@ body {
   font-size: 30px;
   font-family: Arial;
   margin: 0px 10px 0px;
+  padding: 0px 40px;
 }
 
 .logo h4:hover {
